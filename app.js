@@ -19,7 +19,7 @@ const db = mysql.createConnection({
 
 
 
-})
+});
 
 
 const publicDirectory = path.join(__dirname,'./public');
@@ -27,6 +27,11 @@ const publicDirectory = path.join(__dirname,'./public');
 app.use(express.static(publicDirectory));
 
 //console.log(__dirname);
+//parse url -encoded bodies (as sent by html forms)
+app.use(express.urlencoded({extended: false}));
+
+//parse json -encoded bodies (as sent by html forms)
+app.use(express.json())
 
 app.set('view engine', 'hbs');
 
@@ -44,33 +49,30 @@ db.connect((error)=>{
 
 })
 
-app.get("/",(req,res) =>{
+// app.get("/",(req,res) =>{
 
 
-//    res.send("<h1> Home page </h1>")
-         res.render("index");
+// //    res.send("<h1> Home page </h1>")
+//          res.render("index");
   
-});
+// });
 
 
-app.get("/register", (req, res) => {
+// app.get("/register", (req, res) => {
 
 
-    //    res.send("<h1> Home page </h1>")
-    res.render("register");
+//     //    res.send("<h1> Home page </h1>")
+//     res.render("register");
 
-});
+// });
 
-app.get("/login", (req, res) => {
-
-
-    //    res.send("<h1> Home page </h1>")
-    res.render("login");
-
-});
+// app.get("/login", (req, res) => {
 
 
+//     //    res.send("<h1> Home page </h1>")
+//     res.render("login");
 
+// });
 
 
 
@@ -78,6 +80,12 @@ app.get("/login", (req, res) => {
 
 
 
+app.use('/',require('./routes/pages'));
+
+
+
+
+app.use('/auth', require('./routes/auth'));
 
 app.listen(5000,()=>{
 

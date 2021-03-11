@@ -45,7 +45,7 @@
 
             </div>
             <div class="card-body">
-                <form>
+                <form action ="/auth/register" method="POST" >
                    <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name">
@@ -62,13 +62,18 @@
                         <label for="password">Password</label>
                         <input type="password" class="form-control" name="password" id="password" placeholder="Password">
                     </div>
-
+                    <div class="form-group">
+                        <label for="passwordConfirm">Confirm Password</label>
+                        <input type="password" class="form-control" name="passwordConfirm" id="passwordConfirm" placeholder="Password">
+                    </div>
                     
                     <button type="submit" class="btn btn-primary">Register</button>
                 </form>
             </div>
         </div>
-
+               {{#if message }}
+               <h4 class= "alert alert-danger mt-4" >{{message}} </h4>
+               {{/if}}
 
     </div>
 
