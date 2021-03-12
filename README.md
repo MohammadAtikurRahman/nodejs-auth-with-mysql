@@ -88,7 +88,7 @@ After installing node, this project will need yarn too, so just run the followin
 
 3. Import database to the myphpadmin
 
-4. Start Xampp Server
+4. [Start Xampp Server] (https://www.apachefriends.org/index.html) 
 
 ## Enviroment
 
