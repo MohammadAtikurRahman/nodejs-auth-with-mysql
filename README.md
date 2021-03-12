@@ -91,17 +91,19 @@ After installing node, this project will need yarn too, so just run the followin
 
 Create an enivroment .env and update it.
 
-DATABASE = <database name>
+DATABASE = `database name`
 
-DATABASE_HOST = <localhost>
+DATABASE_HOST = `localhost`
 
-DATABASE_USER = <database user>
+DATABASE_USER = `database user`
 
-DATABASE_PASSWORD = <database user password>
+DATABASE_PASSWORD = `database user password`
 
-JWT_SECRET = <jwt secrets key>
-JWT_EXPIRES_IN = <jwt expire date>
-JWT_COOKIE_EXPIRES =<jwt cookie expires>
+JWT_SECRET = `jwt secrets key`
+
+JWT_EXPIRES_IN = `jwt expire date`
+
+JWT_COOKIE_EXPIRES =`jwt cookie expires`
 
 ## Running the project
 
