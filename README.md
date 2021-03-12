@@ -93,6 +93,7 @@ After installing node, this project will need yarn too, so just run the followin
 ## Enviroment
 
 Create an enivroment .env and update it.
+
  **rewrite .env.sample to .env**
 
 
