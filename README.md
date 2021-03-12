@@ -1,6 +1,5 @@
 # Project Name : DSI Assignment
 
-
 ## Prerequisites
 
 This project requires NodeJS (version 8 or later) and NPM.
@@ -14,8 +13,8 @@ $ npm -v && node -v
 v8.16.0
 ```
 
-
 ## :bookmark: Table of Contents
+
 - [Built with](#hammer-built-with)
 - [Tools and Technologies](#gear-tools-and-technologies)
 - [Feature List](#bookmark-feature-list)
@@ -30,28 +29,30 @@ v8.16.0
 - [Nodejs](https://nodejs./)
 - [Bootstrap](http://www.getbootstrap.com/)
 
-
 # :bookmark: Feature List
-* User  
-  * Registration
-  * Login
 
-  ##  Installation
+- User
+
+  - Registration
+  - Login
+
+  ## Installation
 
   ### Node
-- #### Node installation on Windows
+
+* #### Node installation on Windows
 
   Just go on [official Node.js website](https://nodejs.org/) and download the installer.
-Also, be sure to have `git` available in your PATH, `npm` might need it (You can find git [here](https://git-scm.com/)).
+  Also, be sure to have `git` available in your PATH, `npm` might need it (You can find git [here](https://git-scm.com/)).
 
-- #### Node installation on Ubuntu
+* #### Node installation on Ubuntu
 
   You can install nodejs and npm easily with apt install, just run the following commands.
 
       $ sudo apt install nodejs
       $ sudo apt install npm
 
-- #### Other Operating Systems
+* #### Other Operating Systems
   You can find more information about the installation on the [official Node.js website](https://nodejs.org/) and the [official NPM website](https://npmjs.org/).
 
 If the installation was successful, you should be able to run the following command.
@@ -67,23 +68,40 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
     $ npm install npm -g
 
 ###
+
 ### Yarn installation
-  After installing node, this project will need yarn too, so just run the following command.
+
+After installing node, this project will need yarn too, so just run the following command.
 
       $ npm install -g yarn
+
 ## Install Process
 
     $ git clone https://github.com/MohammadAtikurRahman/nodejs-auth-with-mysql.git
     $ cd nodejs-auth-with-mysql
     $ npm install
 
-
-
 ## Database
+
 1. Extract Database zipped file
 2. Import database to the myphpadmin
-3. Start Xampp Server 
- 
+3. Start Xampp Server
+
+## Enviroment
+
+Create an enivroment .env and update it.
+
+DATABASE = <database name>
+
+DATABASE_HOST = <localhost>
+
+DATABASE_USER = <database user>
+
+DATABASE_PASSWORD = <database user password>
+
+JWT_SECRET = <jwt secrets key>
+JWT_EXPIRES_IN = <jwt expire date>
+JWT_COOKIE_EXPIRES =<jwt cookie expires>
 
 ## Running the project
 
@@ -91,11 +109,9 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
 ## Simple build for production
 
-
 ## Run
 
 [localhost:5000](http://localhost:5000)
-
 
 ### Author
 
