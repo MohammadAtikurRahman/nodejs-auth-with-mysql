@@ -82,10 +82,10 @@ After installing node, this project will need yarn too, so just run the followin
     $ npm install
 
 ## Database
-
-1. Extract Database zipped file
-2. Import database to the myphpadmin
-3. Start Xampp Server
+1 [Download Database]( https://github.com/MohammadAtikurRahman/nodejs-auth-with-mysql/blob/master/database%20file.rar)
+2. Extract Database zipped file 
+3. Import database to the myphpadmin
+4. Start Xampp Server
 
 ## Enviroment
 
