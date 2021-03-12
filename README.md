@@ -77,42 +77,13 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
     $ cd nodejs-auth-with-mysql
     $ npm install
 
-## install packges
-$ npm i mysql
 
-$ npm i nodemon
-
-$ npm i dotenv
-
-$ npm i email-validator
-
-$ npm i express
-
-$ npm i hbs
-
-$ npm i bcryptjs
-
-$ npm i cookie-parser
 
 ## Database
 1. Extract Database zipped file
 2. Import database to the myphpadmin
 3. Start Xampp Server 
- ### .env 
-DATABASE = nodejs-login
-
-DATABASE_HOST = localhost
-
-DATABASE_USER = root
-
-DATABASE_PASSWORD = 
-
-JWT_SECRET = mysupersecretpassword
-
-JWT_EXPIRES_IN = 90d
-
-JWT_COOKIE_EXPIRES = 90
-
+ 
 
 ## Running the project
 
