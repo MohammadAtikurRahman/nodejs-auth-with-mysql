@@ -1,4 +1,18 @@
-# Project Name
+# Project Name : DSI Assignment
+
+
+## Prerequisites
+
+This project requires NodeJS (version 8 or later) and NPM.
+[Node](http://nodejs.org/) and [NPM](https://npmjs.org/) are really easy to install.
+To make sure you have them available on your machine,
+try running the following command.
+
+```sh
+$ npm -v && node -v
+6.4.1
+v8.16.0
+```
 
 
 ## :bookmark: Table of Contents
@@ -10,63 +24,108 @@
 - [Database Seeding](#floppy_disk-database-seeding)
 
 ## :hammer: Built with
-- [TypeScript](https://www.typescriptlang.org/)
+
 - [Express](https://expressjs.com/)
-- [MongoDB](https://www.mongodb.com/)
-- [Passport](http://passportjs.org/)
-- [Mocha](https://mochajs.org/)
-- [Chai](https://www.chaijs.com/)
-- [Angular](https://angular.io/)
+- [MySql](https://www.mysql.com/)
+- [Nodejs](https://nodejs./)
 - [Bootstrap](http://www.getbootstrap.com/)
 
-## :gear: Tools and Technologies
-- [Angular CLI](https://cli.angular.io/)
-- [Docker](https://www.typescriptlang.org/)
-- [Heroku](https://expressjs.com/)
-- [Prettier](https://www.mongodb.com/)
 
 # :bookmark: Feature List
 * User  
   * Registration
   * Login
-  
-##  Installation
-1. Install [Node.js](https://nodejs.org) and [MongoDB](https://www.mongodb.com)
-2. Install Angular CLI: `npm i -g @angular/cli`
-3. From project root folder install all the dependencies: `npm i`
+
+  ##  Installation
+
+  ### Node
+- #### Node installation on Windows
+
+  Just go on [official Node.js website](https://nodejs.org/) and download the installer.
+Also, be sure to have `git` available in your PATH, `npm` might need it (You can find git [here](https://git-scm.com/)).
+
+- #### Node installation on Ubuntu
+
+  You can install nodejs and npm easily with apt install, just run the following commands.
+
+      $ sudo apt install nodejs
+      $ sudo apt install npm
+
+- #### Other Operating Systems
+  You can find more information about the installation on the [official Node.js website](https://nodejs.org/) and the [official NPM website](https://npmjs.org/).
+
+If the installation was successful, you should be able to run the following command.
+
+    $ node --version
+    v8.11.3
+
+    $ npm --version
+    6.1.0
+
+If you need to update `npm`, you can make it using `npm`! Cool right? After running the following command, just open again the command line and be happy.
+
+    $ npm install npm -g
+
+###
+### Yarn installation
+  After installing node, this project will need yarn too, so just run the following command.
+
+      $ npm install -g yarn
+## Install Process
+
+    $ git clone https://github.com/MohammadAtikurRahman/nodejs-auth-with-mysql.git
+    $ cd nodejs-auth-with-mysql
+    $ npm install
+
+## install packges
+$ npm i mysql
+
+$ npm i nodemon
+
+$ npm i dotenv
+
+$ npm i email-validator
+
+$ npm i express
+
+$ npm i hbs
+
+$ npm i bcryptjs
+
+$ npm i cookie-parser
+
+## Database
+1. Extract Database zipped file
+2. Import database to the myphpadmin
+3. Start Xampp Server 
+ ### .env 
+DATABASE = nodejs-login
+
+DATABASE_HOST = localhost
+
+DATABASE_USER = root
+
+DATABASE_PASSWORD = 
+
+JWT_SECRET = mysupersecretpassword
+
+JWT_EXPIRES_IN = 90d
+
+JWT_COOKIE_EXPIRES = 90
+
+
+## Running the project
+
+    $ npm start
+
+## Simple build for production
+
 
 ## Run
 
-### Development mode
+[localhost:5000](http://localhost:5000)
 
-`npm run dev`: [concurrently](https://github.com/kimmobrunfeldt/concurrently) execute MongoDB, Angular build, TypeScript compiler and Express server.
-
-A window will automatically open at [localhost:4200](http://localhost:4200). Angular and Express files are being watched. Any change automatically creates a new bundle, restart Express server and reload your browser.
-
-### Production mode
-
-`npm run prod`: run the project with a production bundle and AOT compilation listening at [localhost:3000](http://localhost:3000)
-
-### Docker
-
-1. `docker-compose up`
-2. Go to [localhost:3000](http://localhost:3000)
-
-### Running tests
-
-Run `ng test` to execute the frontend unit tests via [Karma](https://karma-runner.github.io).
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-Run `npm run testbe` to execute the backend tests via [Mocha](https://mochajs.org/) (it requires `mongod` already running).
-
-### Running linters
-
-Run `npm run lint` to execute [TS linting](https://github.com/palantir/tslint), [HTML linting](https://github.com/htmlhint/HTMLHint) and [SASS linting](https://github.com/sasstools/sass-lint).
-
-## :floppy_disk: Database Seeding
-$ npm run seed
 
 ### Author
 
-- [Nazmul Ahsan](https://github.com/tarekahsan709)
+- [Md. Atikur Rahman](https://github.com/MohammadAtikurRahman)
