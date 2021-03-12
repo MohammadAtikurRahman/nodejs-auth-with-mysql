@@ -94,7 +94,7 @@ After installing node, this project will need yarn too, so just run the followin
 
 Create an enivroment .env and update it.
 
- **rewrite .env.sample to .env**
+ **Rewrite .env.sample to .env**
 
 
 DATABASE = `database name`
